@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.navbar{
+    width:85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    cursor:pointer;
+    background: rgb(11, 223, 11);
+    border-radius: 70px;
+    margin-left: -30px;
+}
+.navbar ul li{
+    position: relative;
+    list-style: none;
+    display:inline-block;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(244, 138, 0);
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #f6f6f9;
+    position: absolute;
+    left:0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+    background-color: black;
+}
+.content{
+    width:100%;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(0, 255, 106);
+    background-color: #ff5e00;
+    margin-top: 60px;
+}
+.content h1{
+    font-size: 40px;
+    margin-top: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.content p{
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 50px;
+    color: rgb(139, 14, 37);
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid #0400ff;
+    background:transparent;
+    color:#ff0000;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #ff0000;
+    height: 100%;
+    width:0;
+    border-radius:25px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: -1;
+}
+button:hover span{
+    width:100%;
+}
+button:hover{
+    color: black;
+    border:none;
+}
+.content h1 p{
+    width : 100%;
+    background: linear-gradient(top, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/rescue\ images.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.slider figure img{
+    display: flex;
+    width: 20%;
+    height: 700px;
+    float:left;
+}
+.slider figure{
+    position:relative;
+    width:500%;
+    margin:0;
+    left:0;
+    text-align: left;
+    animation: 5s slidy infinite;
+    margin-top: 235px;
+}
+@keyframes slidy{
+    0%{
+        left:0%;
+    }
+    20%{
+        left:0%;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left:-100%;
+    }
+    50%{
+        left:-200%;
+    }
+    70%{
+        left:-200%;
+    }
+    75%{
+        left:-300%;
+    }
+    95%{
+        left:-300%;
+    }
+    100%{
+        left:-400%;
+    }
+}
+.images{
+    width: 100%;
+    font-size : 40px;
+    padding-left : 10px;
+    float: left;
+    padding-top: 20px;
+    margin-top: -20px;
+}
+.container{
+    width: 1280;
+    height: 960;
+    padding-left: 450px;
+    background-color: #ff5e00;
+    margin-top: -200px;
+}
+.images1{
+    padding-left : 0px;
+    float: left;
+    padding-top: -5px;
+    margin-top: 0px;
+}
+.images1 h2{
+    position: absolute;
+    list-style: none;
+    display:inline-block;
+    padding-top: 100px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.images1 p1{
+    position: absolute;
+    list-style: none;
+    display:inline-block; 
+    padding-top: 150px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn1:hover{
+    color: black;
+    border: none;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+.images2{
+    padding-left : 0px;
+    float: left;
+    padding-top: -5px;
+    margin-top: 0px;
+}
+.images2 h3{
+    position:absolute;
+    list-style: none;
+    display:inline-block;
+    padding-block-start: 100px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+.images2 p2{
+    position: absolute;
+    list-style: none;
+    display:inline-block; 
+    padding-top: 180px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.images3{
+    width: 100%;
+    font-size : 40px;
+    padding-left : 0px;
+    float: left;
+    padding-top: 20px;
+    margin-top: -20px;
+}
+.search-box{
+     position:relative;
+     padding: 12px;
+     width: 15%;
+     border: 1px solid #ff00e6;
+     outline: 0;
+     border-radius: 10px;
+}
+.images3 copyrights h4{
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.butsub{
+    background-color: #2d45c0;
+    color: #ff0000;
+    position: relative;
+}
